@@ -1,0 +1,143 @@
+<%-include header.ejs %>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  
+  .header {
+    background-color:plum;
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .column {
+    float: left;
+    padding: 15px;
+  }
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .menu {
+    width: 25%;
+  }
+  
+  .content {
+    width: 75%;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color:lightcoral;
+    color: #ffffff;
+  }
+  
+  .menu li:hover {
+    background-color:pink;
+  }
+  </style>
+
+  <style>
+      img {
+        float: right;
+      }
+      </style>
+      <style>
+          * {
+            box-sizing: border-box;
+          }
+          
+          .img-container {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+          }
+          
+          .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+          }
+          </style>
+<div class="header">
+  <span style="font-size:55px;">“Good things come to those<br>
+    who thrift so lets make <br>
+    Secondhand our<br>
+    first purchase”
+</div>
+<div class="clearfix">
+  <div class="img">
+      <img src="images/lastone.jpg" alt="study" style="width:33%"></div>
+      <div class="img">
+      <img src="images/helloworld.jpg" alt="study" style="width:33%"></div>
+      <div class="img">
+  <img src="images/background.jpg" alt="study" style="width:33%"></div>
+</div>
+      <div class="header">
+        <h1>OUR COLLECTIONS</h1>
+      </div>
+      
+      <div class="clearfix">
+        <div class="column menu">
+          <ul>
+            <li>All</li>
+            <li>T-shirts</li>
+            <li>Pants</li>
+            <li>Shoes</li>
+          </ul>
+        </div>
+      
+        <div class="column content">
+
+
+  <div class="card" style="width:25%;">
+    <img src="images/first.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">T shirt</h5>
+      <p class="card-text">This is a simple cotton t-shirt available in
+        pink shade and worn only once</p>
+        <p style="color: red;">Rs 550</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+    </div>
+  </div>
+
+  <!-- <div class="card" style="width: 25%;">
+    <img src="images/greytshirt.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">T shirt</h5>
+      <p class="card-text">This is a simple cotton t-shirt available in
+        grey shade and worn only twice</p>
+        <p style="color: red;">Rs.350</p>
+      <a href="#" class="btn btn-primary">Buy</a>
+    </div>
+  </div> -->
+
+    <div class="links">
+        <!-- <a href="#">home</a> -->
+        <a href="#">About</a>
+        <a href="#">Menu</a>
+        <a href="#">Products</a>
+        <a href="#">Review</a>
+        <a href="#">Contact</a>
+        <a href="#">Blogs</a>
+    </div>
+
+    <div class="credit">created by <span>Sabera Karki</span> | all rights reserved</div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+  <%-include footer.ejs %>

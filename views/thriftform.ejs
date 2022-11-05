@@ -1,0 +1,53 @@
+<%-include header.ejs %>
+<style>
+    /*add full-width input fields*/
+
+    input[type=text],
+    input[type=url]
+    {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    }
+
+
+    .container {
+        padding: 16px;
+    }
+
+    /*clear floats*/
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+</style>
+    <h1 style="background-color:pink;text-align:center;height:50px;">THRIFT FORM</h1>
+    <div class="main">
+        <div class="register">
+            <div class="container">
+            <form action="/thriftform" method="post">
+                <label>ENTER NAME</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label>ENTER NUMBER</label><br>
+                <input type="text" id="number" name="number"><br>
+                <label>ENTER ADDRESS</label><br>
+                <input type="text" id="add" name="add"><br>
+                <label>ENTER PRODUCT FOR SELL</label><br>
+                <input type="text" id="product" name="product"><br>
+                <label>ENTER TOTAL USAGE AMOUNT</label><br>
+                <input type="text" id="used" name="used"><br>
+                <label>ENTER EXPECTED AMOUNT</label><br>
+                <input type="text" id="price" name="price"><br>
+                <label>UPLOAD THE PICTURE HERE</label><br>
+                <input type="url" id="image" name="image"><br>
+                <button type="submit" style="align-content: center;background-color: magenta;">SUBMIT</button>
+            </div>
+        </div>
+    </div>
+</form>
+    <%-include footer.ejs %>

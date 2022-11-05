@@ -1,0 +1,57 @@
+<%-include header.ejs %>
+<html>
+<style>
+  /*add full-width input fields*/
+
+  input[type=text],
+   {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  /* set a style for all buttons*/
+
+ 
+ 
+  /*add padding to container elements*/
+
+  .container {
+    padding: 16px;
+  }
+
+  /*clear floats*/
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+</style>
+<h1  style="background-color:pink;text-align:center;height: 50px;">RETURN FORM</h1>
+        <div class ="main">
+          <div class ="register">
+            <div class="container">
+        <form action="/returnform" method="post" >
+            <label for="fname">ENTER NAME</label><br>
+            <input type="text" id="fname" name="name"><br>
+            <label for="fname">ENTER NUMBER</label><br>
+            <input type="text" id="number" name="number"><br>
+            <label for="fname">ENTER ADDRESS</label><br>
+            <input type="text" id="add" name="address"><br>
+            <label for="fname">ENTER PRODUCT</label><br>
+            <input type="text" id="product" name="product"><br>
+            <label for="fname">ENTER PRICE</label><br>
+            <input type="text" id="price" name="price"><br>
+            MENTION THE REASON FOR RETURN<br>
+            <textarea name = "reason" cols="25" rows="10"></textarea>
+            <div class ="clearfix">
+            <button type="submit" style="background-color:magenta ;align-content: center;">SUBMIT</button></div>
+            </div> 
+    </div>
+ </div>
+</form>
+ <%-include footer.ejs %>

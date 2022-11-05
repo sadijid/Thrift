@@ -1,0 +1,48 @@
+/* .navbar{
+    overflow: hidden;
+    background-color: pink;
+}
+
+.navbar a {
+    float:left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+}  
+.navbar a:hover {
+    background-color: :#ddddd;
+    color: black;
+} 
+.navbar a.active{
+    background-color:fuchsia;
+    color:black;
+}  
+
+.navbar input[type=text]
+{
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    border:none;
+    font-size: 17px;
+}
+
+@media screen and (max-width:600px)
+{
+    .navbar a, .navbar input[type=text]{
+        float:none;
+        display:block;
+        text-align: left;
+        width:100%;
+        margin: 0;
+        padding:14px;
+}
+.navbar input[type=text]{
+    border: 1px solid #ccc;
+}
+} */
